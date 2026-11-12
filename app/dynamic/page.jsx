@@ -3,9 +3,8 @@
 // ==============================================================================
 
 // TODO 1: Tambahkan konfigurasi force-dynamic di baris bawah ini.
-// Tulis: export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 // agar Next.js selalu merender ulang halaman ini di server pada setiap request.
-
 
 export default function DynamicPage() {
   // Variabel waktu server real-time
@@ -19,20 +18,22 @@ export default function DynamicPage() {
       {/* TODO 2: Tampilkan variabel waktuServer di dalam tag <b> di bawah ini */}
       <p>
         Waktu server saat ini:{" "}
-        <b style={{ color: "#34d399", fontSize: "18px" }}>
-          {/* Tuliskan {waktuServer} di sini */}
-          ... WIB
-        </b>
+        <b style={{ color: "#34d399", fontSize: "18px" }}>{waktuServer} WIB</b>
       </p>
 
       <div className="note">
         <strong>Petunjuk Pengerjaan:</strong>
         <br />
-        1. Ketik <code>export const dynamic = &quot;force-dynamic&quot;;</code> tepat di bawah komentar TODO 1.
+        1. Ketik <code>
+          export const dynamic = &quot;force-dynamic&quot;;
+        </code>{" "}
+        tepat di bawah komentar TODO 1.
         <br />
-        2. Tampilkan waktu server dengan mengganti titik-titik menjadi <code>{`{waktuServer}`}</code> di dalam tag <code>&lt;b&gt;</code>.
+        2. Tampilkan waktu server dengan mengganti titik-titik menjadi{" "}
+        <code>{`{waktuServer}`}</code> di dalam tag <code>&lt;b&gt;</code>.
         <br />
-        3. Simpan file, lalu tekan <b>Refresh (F5)</b> di browsermu. Perhatikan waktu selalu berganti!
+        3. Simpan file, lalu tekan <b>Refresh (F5)</b> di browsermu. Perhatikan
+        waktu selalu berganti!
       </div>
     </div>
   );
